@@ -6,7 +6,8 @@ window.DECK = {
   "examLabel": "Exam",
   "storageKey": "ircrm-exams-leitner-v1",
   "iconColor": "#0f7c86",
-  "lang": "en"
+  "lang": "en",
+  "url": "https://raphnu.github.io/ircrm-flashcards/"
  },
  "settings": {
   "intervals": [

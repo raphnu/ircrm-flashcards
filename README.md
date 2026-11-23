@@ -2,7 +2,7 @@
 
 Leitner flashcards: 74 cards across 14 topics. Exam: 2026-12-04.
 
-**Open on iPhone:** Safari → the GitHub Pages link → Share → Add to Home Screen. Always study from the
+**Open on iPhone:** Safari → https://raphnu.github.io/ircrm-flashcards/ → Share → Add to Home Screen. Always study from the
 home-screen icon; it works offline and keeps its own progress.
 
 - Boxes: Box 1 every 1 day, Box 2 every 1 day, Box 3 every 2 days, Box 4 every 3 days, Box 5 every 5 days. Right = up one box. Wrong = back one box, back tomorrow, and repeated once at the end of the session.
