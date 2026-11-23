@@ -1,0 +1,935 @@
+window.DECK = {
+ "course": {
+  "title": "IRCRM Past Exams",
+  "shortName": "IRCRM Exams",
+  "examDate": "2026-12-04",
+  "examLabel": "Exam",
+  "storageKey": "ircrm-exams-leitner-v1",
+  "iconColor": "#0f7c86",
+  "lang": "en"
+ },
+ "settings": {
+  "intervals": [
+   1,
+   1,
+   2,
+   3,
+   5
+  ],
+  "onWrong": "back-one",
+  "math": true
+ },
+ "topics": [
+  {
+   "id": "I1",
+   "number": "I.1",
+   "short": "I.1",
+   "name": "Introduction: IR risk, from bonds to interest rates"
+  },
+  {
+   "id": "I2",
+   "number": "I.2",
+   "short": "I.2",
+   "name": "Term structure: stylized facts & theories"
+  },
+  {
+   "id": "I3",
+   "number": "I.3",
+   "short": "I.3",
+   "name": "Hedging IR risk: duration & convexity"
+  },
+  {
+   "id": "I4",
+   "number": "I.4",
+   "short": "I.4",
+   "name": "Interest rate derivatives"
+  },
+  {
+   "id": "II1",
+   "number": "II.1",
+   "short": "II.1",
+   "name": "Static IR models (NS, Svensson, splines)"
+  },
+  {
+   "id": "II21",
+   "number": "II.2.1",
+   "short": "II.2.1",
+   "name": "Continuous-time finance recap"
+  },
+  {
+   "id": "II22",
+   "number": "II.2.2",
+   "short": "II.2.2",
+   "name": "Short-rate models"
+  },
+  {
+   "id": "II23",
+   "number": "II.2.3",
+   "short": "II.2.3",
+   "name": "Affine models of the term structure"
+  },
+  {
+   "id": "III1",
+   "number": "III.1",
+   "short": "III.1",
+   "name": "Credit risk intro & credit default swaps"
+  },
+  {
+   "id": "III2",
+   "number": "III.2",
+   "short": "III.2",
+   "name": "Structural models (Merton)"
+  },
+  {
+   "id": "III3",
+   "number": "III.3",
+   "short": "III.3",
+   "name": "Reduced-form models (hazard rates)"
+  },
+  {
+   "id": "III4",
+   "number": "III.4",
+   "short": "III.4",
+   "name": "Credit rating models (migration, Credit VaR)"
+  },
+  {
+   "id": "III5",
+   "number": "III.5",
+   "short": "III.5",
+   "name": "Default correlation (Gaussian copula)"
+  },
+  {
+   "id": "RND",
+   "number": "–",
+   "short": "RND",
+   "name": "Option-implied expectations (RND), old exams only"
+  }
+ ],
+ "cards": [
+  {
+   "id": "ex2017feb-g1-1",
+   "topics": [
+    "RND"
+   ],
+   "src": "1 Feb 2017 · QI.1",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 1 Feb 2017 · Q Group I · 1</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">Group I (8,0). Please describe how to:</span>assess financial market participants’ expectations from option prices. (2,5)",
+   "a": "<ul><li>CCAPM</li><li>RND</li><li>Cumulative Distribution</li></ul>"
+  },
+  {
+   "id": "ex2017feb-g1-2",
+   "topics": [
+    "RND"
+   ],
+   "src": "1 Feb 2017 · QI.2",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 1 Feb 2017 · Q Group I · 2</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">Group I (8,0). Please describe how to:</span>estimate a risk-neutral density function with non-parametric methodologies (also identifying the pros and cons of these methodologies). (3,0)",
+   "a": "<ul><li>price of the symmetric of a butterfly spread</li><li><b>arithmetic approximation</b><ul><li>Pros: Easier to calculate</li><li>Cons: very irregular RNDs</li></ul></li><li>price of the symmetric of a butterfly spread</li><li><b>kernel smoothing</b><ul><li>Pros: smoother RNDs</li><li>Cons: More complex to calculate</li></ul></li></ul>"
+  },
+  {
+   "id": "ex2017feb-g1-3",
+   "topics": [
+    "III2"
+   ],
+   "src": "1 Feb 2017 · QI.3",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 1 Feb 2017 · Q Group I · 3</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">Group I (8,0). Please describe how to:</span>compute the probability of default for a company from its stock price. (2,5)",
+   "a": "<ul><li><b>Merton model:</b><ul><li>Equations</li><li>Unknowns</li><li>Distribution</li><li>Open issues</li></ul></li></ul>"
+  },
+  {
+   "id": "ex2017feb-g2-1",
+   "topics": [
+    "II21"
+   ],
+   "src": "1 Feb 2017 · QII.1",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 1 Feb 2017 · Q Group II · 1</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">Group II (6,0). How can one argue that:</span>in a Wiener process, the uncertainty is proportional to time? (1,5)",
+   "a": "<ul><li>W(t) – W(s) ~ N (0, sqrt(t-s))</li><li>charts</li></ul>"
+  },
+  {
+   "id": "ex2017feb-g2-2",
+   "topics": [
+    "II21"
+   ],
+   "src": "1 Feb 2017 · QII.2",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 1 Feb 2017 · Q Group II · 2</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">Group II (6,0). How can one argue that:</span>the Geometric Brownian Motion hypothesis is relevant for the distribution of a financial asset price? (2,5)",
+   "a": "<ul><li>GBM implies (through Itô’s Lemma) that the asset price is log-normally distributed (rate of return normally distributed)</li></ul>"
+  },
+  {
+   "id": "ex2017feb-g2-3",
+   "topics": [
+    "II23"
+   ],
+   "src": "1 Feb 2017 · QII.3",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 1 Feb 2017 · Q Group II · 3</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">Group II (6,0). How can one argue that:</span>an asset is riskier when its pay-off is negatively correlated to the stochastic discount factor (2,0)",
+   "a": "<div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$\\Lambda_t = E_t\\left[i_{t+1}\\right]-i^f_{t+1} = -\\rho_{M_{t+1},i_{t+1}}\\frac{\\sigma_{M_{t+1}}\\sigma_{i_{t+1}}}{E_t\\left[M_{t+1}\\right]}$$</div><div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$E_t\\left[i_{t+1}\\right]=i^f_{t+1}-\\frac{Cov_t\\left[M_{t+1},i_{t+1}\\right]}{E_t\\left[M_{t+1}\\right]}$$</div><p>The interest rate of an asset results from the risk-free rate, adjusted by a risk factor => the lower the covariance, the higher the risk and the interest rate.</p>"
+  },
+  {
+   "id": "ex2017feb-g3-1",
+   "topics": [
+    "II22"
+   ],
+   "src": "1 Feb 2017 · QIII.1",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 1 Feb 2017 · Q Group III · 1</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">Group III (6,0).</span>Please comment on the trade-off between CIR and Vasicek interest rate models (2,5)",
+   "a": "<ul><li>Presentation of models</li><li>CIR offers models closer to reality than Vasicek (stochastic variance), but are more complex to estimate (imposing e.g. sign restrictions on the determinants of volatility)</li></ul>"
+  },
+  {
+   "id": "ex2017feb-g3-2",
+   "topics": [
+    "II23"
+   ],
+   "src": "1 Feb 2017 · QIII.2",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 1 Feb 2017 · Q Group III · 2</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">Group III (6,0).</span>Please describe a 2-factor Gaussian affine model for the term structure of interest rates, presenting the equations for the yield curve, the short-term rate, the volatility curve and the term premium (3,5)",
+   "a": "<div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$-m_{t+1}=\\xi+\\gamma^T z_t+\\lambda^T V(z_t)^{1/2}\\varepsilon_{t+1}$$</div><div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$z_{t+1}=(I-\\Phi)\\theta+\\Phi z_t+V(z_t)^{1/2}\\varepsilon_{t+1}$$</div><div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$-p_{n,t}=A_n+B_n^{\\,T}z_t$$</div><div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$A_n=A_{n-1}+\\xi+B_{n-1}^{\\,T}(I-\\Phi)\\theta$$</div><div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$-\\tfrac12(\\lambda+B_{n-1})^T\\alpha(\\lambda+B_{n-1})$$</div><div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$B_n^{\\,T}=\\gamma^T+B_{n-1}^{\\,T}\\Phi-\\tfrac12(\\lambda+B_{n-1})^T\\beta^T z_t(\\lambda+B_{n-1})$$</div><div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$y_{n,t}=\\frac1n\\left(A_n+B_n^{\\,T}z_t\\right)$$</div><div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$y_{1,t}=\\xi-\\tfrac12\\lambda^T\\alpha\\lambda+\\left[\\gamma^T-\\tfrac12\\lambda^T\\beta^T\\lambda\\right]z_t$$</div><div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$Var_t\\left(y_{n,t+1}\\right)=\\frac{1}{n^2}B_n^{\\,T}V(z_t)B_n$$</div><div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$\\Lambda_{n,t}=E_tp_{n,t+1}-p_{n+1,t}-y_{1,t}$$</div><div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$=-\\sum_{i=1}^{k}\\left[\\lambda_iB_{i,n}+\\frac{B_{i,n}^{\\,2}}{2}\\right]\\alpha_i$$</div><div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$-\\sum_{i=1}^{k}\\left(\\lambda_iB_{i,n}+\\frac{B_{i,n}^{\\,2}}{2}\\right)\\beta_i^Tz_t$$</div>"
+  },
+  {
+   "id": "ex2018jan-1-1",
+   "topics": [
+    "I4"
+   ],
+   "src": "10 Jan 2018 · Q1.1",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 10 Jan 2018 · Q 1.1</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">1. Please consider the following information on the Euro area yield curve for the 5th January 2018 (figures in %): <b>Euro Money Market:</b> Overnight -0,413 · 1 week -0,410 · 1month -0,423 · 3 months -0,385 · 6 months -0,320 · 1 year -0,223. <b>German Government Debt:</b> 2 years -0,605 · 3 years -0.484 · 5 years -0,203 · 10 years 0,438</span>Compute the price of a futures contract for the 3-month Euribor, with expiry date in April 2018. (2,0/20)",
+   "a": "<p><i>Check: plugging s<sub>0,5</sub> = -0,320% and s<sub>0,25</sub> = -0,385% into the correction's own formula gives ≈ -0,255% (futures ≈ 100,255), not -0,15%. Confirm with the professor.</i></p><p>Futures price = 100 – implied interest rate (%)</p><p>Implied interest rate = <sub>3</sub>f<sub>3</sub> = [(1+s<sub>m+n</sub>)<sup>m+n</sup>/(1+s<sub>m</sub>)<sup>m</sup>]<sup>1/n</sup> = [(1+s<sub>0,5</sub>)<sup>0,5</sup>/(1+s<sub>0,25</sub>)<sup>0,25</sup>]<sup>1/0,25</sup> = -0,15%</p><p>=> <b>Futures price =100,15</b></p>"
+  },
+  {
+   "id": "ex2018jan-1-2",
+   "topics": [
+    "I3"
+   ],
+   "src": "10 Jan 2018 · Q1.2",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 10 Jan 2018 · Q 1.2</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">1. Please consider the following information on the Euro area yield curve for the 5th January 2018 (figures in %): <b>Euro Money Market:</b> Overnight -0,413 · 1 week -0,410 · 1month -0,423 · 3 months -0,385 · 6 months -0,320 · 1 year -0,223. <b>German Government Debt:</b> 2 years -0,605 · 3 years -0.484 · 5 years -0,203 · 10 years 0,438</span>Considering that the 5 and 10 year maturities of the Government debt are represented by bonds paying annual coupons, with a redemption value of 100 Euros and coupon rates of 2% and 3%, respectively, compute the number of 10-year bonds to use in a duration hedging strategy of a portfolio comprised by 100 bonds representative of the 5-year maturity. (2,5/20)",
+   "a": "<p><i>Check: the correction has two typos: the 5-year bond price is 111,0824 (100,5534 is wrong), and the 10-year discount factor should be (1+0,00438), not (1+0,0438). The final q = -47,9 is correct.</i></p><p>q = - (P x Dp) / (H x Dh)</p><p>Portfolio value = 100 5y bonds</p><p>Price of 5 year bond = 2/(1-0,00203) + 2/(1-0,00203)<sup>2</sup> + 2/(1-0,00203)<sup>3</sup> + 2/(1-0,00203)<sup>4</sup> + 102/(1-0,00203)<sup>5</sup> = 100,5534 => Portfolio value (P) = 111,0824 x 100 = 11108,24</p><p>5y bond Duration = 4,82</p><p>Price of 10 year bond = 3/(1+0,0438)+ 3/(1+0,0438)<sup>2</sup> + … + 3/(1+0,0438)<sup>9</sup> + 103/(1+0,0438)<sup>10</sup> = 125.0135</p><p>10y Bond Duration = 8,94</p><p>q = - (P x Dp) / (H x Dh) = - (11108,24 x 4,82)/ (125,0135 x 8,94) = <b>-47,9</b></p>"
+  },
+  {
+   "id": "ex2018jan-1-3",
+   "topics": [
+    "II23"
+   ],
+   "src": "10 Jan 2018 · Q1.3",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 10 Jan 2018 · Q 1.3</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">1. Please consider the following information on the Euro area yield curve for the 5th January 2018 (figures in %): <b>Euro Money Market:</b> Overnight -0,413 · 1 week -0,410 · 1month -0,423 · 3 months -0,385 · 6 months -0,320 · 1 year -0,223. <b>German Government Debt:</b> 2 years -0,605 · 3 years -0.484 · 5 years -0,203 · 10 years 0,438</span>Assuming that most shifts in this yield curve are parallel or just involve changes in the slope and the volatility of interest rates is constant, present an adequate affine model to characterize the curve, by specifying the main equations (e.g. the spot, the one-period forward, the volatility and the term premium curves). (3,0/20)",
+   "a": "<div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$y_{n,t}=\\frac1n\\left(A_n+B_{1,n}z_{1t}+B_{2,n}z_{2t}\\right)$$</div><div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$f_{n,t}=\\delta+\\frac12\\sum_{i=1}^{2}\\left[\\lambda_i^2\\sigma_i^2-\\left(\\lambda_i\\sigma_i+\\frac{1-\\varphi_i^n}{1-\\varphi_i}\\sigma_i\\right)^2\\right]$$</div><div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$+\\sum_{i=1}^{2}\\left[\\varphi_i^nz_{it}\\right]$$</div><div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$\\Lambda_{n,t}=E_tp_{n,t+1}-p_{n+1,t}-y_{1,t}$$</div><div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$=\\frac12\\sum_{i=1}^{k}\\left[\\lambda_i^2\\sigma_i^2-\\left(\\lambda_i\\sigma_i+\\frac{1-\\varphi_i^n}{1-\\varphi_i}\\sigma_i\\right)^2\\right]$$</div><div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$=\\sum_{i=1}^{k}\\left[-\\lambda_i\\sigma_i^2B_{i,n}-\\frac{B_{i,n}^{\\,2}\\sigma_i^2}{2}\\right]$$</div><div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$Var_t\\left(y_{n,t+1}\\right)=\\frac{1}{n^2}\\sum_{i=1}^{k}\\left(B_{i,n}^2\\sigma_i^2\\right)$$</div>"
+  },
+  {
+   "id": "ex2018jan-1-4",
+   "topics": [
+    "II23"
+   ],
+   "src": "10 Jan 2018 · Q1.4",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 10 Jan 2018 · Q 1.4</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">1.3: a 2-factor Gaussian affine model (parallel and slope shifts, constant volatility).</span>Considering the model presented in the previous question, please show how can one conclude that a financial asset is riskier when its pay-off is negatively correlated to the stochastic discount factor. (2,5/20)",
+   "a": "<div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$\\Lambda_{n,t}=-COV_t\\left(i_{n,t+1},m_{t+1}\\right)-Var_t\\left(i_{n,t+1}\\right)/2$$</div><ul><li>Risk premium determined by the covar. of the asset’s rate of return with the stochastic discount factor => the lower the covar., the higher the risk premium is.</li><li>Rationale behind this.</li></ul>"
+  },
+  {
+   "id": "ex2018jan-2-1",
+   "topics": [
+    "III1"
+   ],
+   "src": "10 Jan 2018 · Q2.1",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 10 Jan 2018 · Q 2.1</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">2. Please consider the marginal probabilities of default for the company EFG (in addition to the interest rate information on the Government Debt provided in question 1): Maturity 1 year: Prob.Default 0,53% · Maturity 2 years: Prob.Default 1,05%. <b>Gov. debt:</b> 2 years -0,605 · 3 years -0.484 · 5 years -0,203 · 10 years 0,438 (%); money market 1 year -0,223</span>Compute the premium of a credit default swap with the following features: (2,5/20) Maturity = 2 years · Notional = € 10.000.000 · Payment in case of default = 80% of the notional",
+   "a": "<p>E<sub>1</sub>[<i>pay-off</i>(2)|ND] = <i>pay-off</i> in case of no default *(1-PD) + <i>pay-off</i> in default *PD =0 x (1− 0.0105) + 0.8 x 0.0105 = 0.0084</p><p>E<sub>1</sub>[<i>pay-off</i>(2)|D] = 0.8</p><p>E<sub>0</sub>[X(2)] = E<sub>1</sub>[<i>pay-off</i>(2)|ND]*(1-PD)+ E<sub>1</sub>[<i>pay-off</i>(2)|D] *PD= 0.0084 x (1 – 0.0053) + 0.8 x 0.0053 = 0,01259548</p><p>V(0,2) = F(0,2) E<sub>0</sub>[X(2)] *nocional = 1,0122107 * 0.01259548*10000000 = €127492,8.</p><p>If the premium is paid on an annual basis, we’ll have: 127492,8 = 1.002234984x p +1,0122107 x p</p><p><b>p = 63289,27</b></p>"
+  },
+  {
+   "id": "ex2018jan-2-2",
+   "topics": [
+    "III2"
+   ],
+   "src": "10 Jan 2018 · Q2.2",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 10 Jan 2018 · Q 2.2</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">2. Please consider the marginal probabilities of default for the company EFG (in addition to the interest rate information on the Government Debt provided in question 1): Maturity 1 year: Prob.Default 0,53% · Maturity 2 years: Prob.Default 1,05%. <b>Gov. debt:</b> 2 years -0,605 · 3 years -0.484 · 5 years -0,203 · 10 years 0,438 (%); money market 1 year -0,223</span>Please explain how would you assess the credit risk of EFG by using a structural model, presenting the theoretical framework and the information required. (2,5/20)",
+   "a": "<ul><li><b>Merton model</b><ul><li>Rationale</li><li>Assumptions</li><li>Equation system</li><li>Problems => Moody’s KMV</li></ul></li></ul>"
+  },
+  {
+   "id": "ex2018jan-2-3",
+   "topics": [
+    "III4"
+   ],
+   "src": "10 Jan 2018 · Q2.3",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 10 Jan 2018 · Q 2.3</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">2. Please consider the marginal probabilities of default for the company EFG (in addition to the interest rate information on the Government Debt provided in question 1): Maturity 1 year: Prob.Default 0,53% · Maturity 2 years: Prob.Default 1,05%. <b>Gov. debt:</b> 2 years -0,605 · 3 years -0.484 · 5 years -0,203 · 10 years 0,438 (%); money market 1 year -0,223</span>Assuming that the price of a bond issued by EFG one year ahead will be 105 or 103, respectively if the rating is A or B at that time and the recovery rate is 40%, please compute the 1-year Credit VaR of a portfolio comprised by 1000 bonds issued by this company, for an adequate percentile. (3,0/20)",
+   "a": "<p><i>Check: the correction's mean is 104,6401 but the last line uses 104,6261; with 104,6401 the result is 1,6401 per bond. The correction stops at one bond; for the 1000-bond portfolio multiply by 1000.</i></p><p>Assuming the current rating A and the following transition probabilities, in addition to the data provided:</p><p>Columns: Prob.Transition (%) (1) · Loan Value at year-end (2) · Difference to the mean (3)=(2)-μ · Contribution to the variance (4)=(1)x(3)^2</p><ul><li><b>A:</b> 98,70% · 105 · 0,3599 · 0,127844146</li><li><b>B:</b> 0,77% · 103 · -1,6401 · 0,020712446</li><li><b>D:</b> 0,53% · 40 · -64,6401 · 22,1452154</li></ul><p>Mean 104,6401 · Variance 22,29377199 · St-dev 4,721628108</p><p><b>1-year 99% Credit-Var</b> = Mean-P<sub>1,B</sub> (as the probability of having 1 year after a rating not above B = P(B)+P(D)) = 0,77%+0,53%=1,3 ≈ 1% = 104,6261-103 = <b>1,6261</b>.</p>"
+  },
+  {
+   "id": "ex2018jan-2-4",
+   "topics": [
+    "III4",
+    "III5"
+   ],
+   "src": "10 Jan 2018 · Q2.4",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 10 Jan 2018 · Q 2.4</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">2.3: 1-year Credit VaR of a portfolio of 1000 bonds issued by EFG (rating migration A/B/D).</span>What would be the main consequences of adding a second bond to this portfolio in what concerns to the calculation of the Credit VaR. (2,0/20)",
+   "a": "<ul><li>All combinations between the 2 bond prices for the several possible ratings would have to be considered</li><li>joint migration probabilities</li><li>correlation coefficient between the 2 bond prices</li></ul>"
+  },
+  {
+   "id": "ex2019jan-1-1",
+   "topics": [
+    "II1"
+   ],
+   "src": "18 Jan 2019 · Q1.1",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 18 Jan 2019 · Q 1.1</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">1. Let us assume that you have to model the term structure of interest rates of a given country or currency.</span>Please explain the type of information usually employed and their main pros and cons. (1)",
+   "a": "<ul><li>Spot, forward or discount rates from zero-coupon bonds</li><li>Usually there are not enough zero-coupon bonds => prices/yields of coupon-paying bonds are used and the yield curve is estimates/smoothed afterwards</li><li>For the short-term, there are usually zero-coupon govt bonds (Treasury bills). However, these bonds don’t have a liquid secondary market => money market reference rates are often used instead, as they are quoted on a daily basis (assuming banks’ credit risk is similar to the Govt, at least in shorter maturities),</li></ul>"
+  },
+  {
+   "id": "ex2019jan-1-2",
+   "topics": [
+    "II1",
+    "II22",
+    "II23"
+   ],
+   "src": "18 Jan 2019 · Q1.2",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 18 Jan 2019 · Q 1.2</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">1. Let us assume that you have to model the term structure of interest rates of a given country or currency.</span>Assuming that the graphical representation of the term structure suffers changes mostly in the level and the slope and that the volatility of interest rates is constant along time, please present, one static and one dynamic model to adequately estimate this term structure, as well as the reasons to choose these models. (2,5)",
+   "a": "<ul><li>Most changes in level and slope => 2 factors must be enough => <b>DPR or NS</b> as a static method and a <b>2-factor affine model</b> may be used.</li><li>Constant volatility => <b>Vasicek-type model</b></li></ul>"
+  },
+  {
+   "id": "ex2019jan-1-3",
+   "topics": [
+    "I2"
+   ],
+   "src": "18 Jan 2019 · Q1.3",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 18 Jan 2019 · Q 1.3</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">1. Let us assume that you have to model the term structure of interest rates of a given country or currency.</span>What could you conclude about the future behavior of interest rates if in a given period long-term interest rates increase more than short-term rates (2,0)?",
+   "a": "<ul><li><b>Expectations theory</b> => higher expectations of short-term interest rates (in the pure version, we can assume that the forward is the expected value of the spot; in the non-pure version, we can only conclude that the expectations increased, but we don’t know the value of the expected future short rate, as we would have to quantify the risk premium, that is assumed to be nil in this version)</li></ul>"
+  },
+  {
+   "id": "ex2019jan-1-4",
+   "topics": [
+    "I3"
+   ],
+   "src": "18 Jan 2019 · Q1.4",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 18 Jan 2019 · Q 1.4</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">1.3: long-term interest rates increase more than short-term rates.</span>Assuming that you’re managing a portfolio of 5-year Government bonds and you anticipate the interest rate shift mentioned in the previous question, how could you implement a hedging strategy using 3-year Government bonds, considering that all bonds are at the par value, have a redemption value of 1000 Euros and pay annual coupon rates of 2% and 1% (respectively for the 5-year and the 3-year maturities). (2,5/20)",
+   "a": "<p><i>Check: “10y Bond Duration” in the correction means the 3-year bond. With D = 4,81, 481000/2970 gives -161,95 (≈ -162 bonds); the correction prints -161.85.</i></p><p>Assuming 100 bonds</p><p>q = - (P x Dp) / (H x Dh)</p><p>Portfolio value = 100 5y bonds</p><p>Price of 5 year bond = 1000 (it is at par value)</p><p>5y bond Duration = 4,8</p><p>Price of 3 year bond = 1000 (it is at par value)</p><p>10y Bond Duration = 2,97</p><p>q = - (100000 x 4,8) / (H x Dh) = - (100000 x 4,81)/ (1000 x 2,97) = <b>-161.85</b></p>"
+  },
+  {
+   "id": "ex2019jan-1-5",
+   "topics": [
+    "II23"
+   ],
+   "src": "18 Jan 2019 · Q1.5",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 18 Jan 2019 · Q 1.5</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">1. Let us assume that you have to model the term structure of interest rates of a given country or currency.</span>Please discuss in which extent these Government bonds are riskier when their pay-offs are negatively correlated to the stochastic discount factor and how could their risk be related to the marginal utility of consumption (2,0)",
+   "a": "<div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$\\Lambda_t = E_t\\left[i_{t+1}\\right]-i^f_{t+1} = -\\rho_{M_{t+1},i_{t+1}}\\frac{\\sigma_{M_{t+1}}\\sigma_{i_{t+1}}}{E_t\\left[M_{t+1}\\right]}$$</div><ul><li>Explain <b>CCAPM</b> => discount rate as the <b>intertemporal marginal rate of substitution</b> =></li></ul><p>in equilibrium the price of a financial asset is such that the utility loss from not consuming the income allocated to the financial asset corresponds to the discounted expected utility from consuming the pay-off of the financial asset in the next period.</p>"
+  },
+  {
+   "id": "ex2019jan-2-1",
+   "topics": [
+    "III2"
+   ],
+   "src": "18 Jan 2019 · Q2.1",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 18 Jan 2019 · Q 2.1</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">2. Please consider the following information on the share prices of PTP company. <i>[Chart “Stock Prices of PTP”, 06-2018 to 01-2019: from about 5 rising to about 22 in Nov 2018, then collapsing to about 0 in Jan 2019.]</i></span>How do you interpret the chart above, concerning the probability of default of this company in its liabilities, by using a structural model? Please present the main assumptions, equations and limitations of the model to be used, as well as the information you would need to perform your assessment based on that model. (3,0)",
+   "a": "<ul><li>explain <b>Merton model</b>, namely the 2-equation system and how to reach there</li></ul>"
+  },
+  {
+   "id": "ex2019jan-2-2",
+   "topics": [
+    "III4"
+   ],
+   "src": "18 Jan 2019 · Q2.2",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 18 Jan 2019 · Q 2.2</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">2. Please consider the following information on the share prices of PTP company. <i>[Chart “Stock Prices of PTP”, 06-2018 to 01-2019: from about 5 rising to about 22 in Nov 2018, then collapsing to about 0 in Jan 2019.]</i></span>Assuming that, at the beginning of the period illustrated in the chart, you had the following information available about the 1-year rating transition matrix from the statistics of a recognized rating agency, aggregating all information regarding investment and speculative grade ratings respectively in a rating class <i>I</i> and <i>S</i> (corresponding <i>D</i> to default), compute the 2-year probability of default of the company PTP if this company had then a rating classification of “I”, taking into consideration the potential rating migrations and interpret the result obtained. (2,5)<br><b>1-year transition matrix</b> (rows = from, columns I · S · D): I: 0,8 · 0,175 · 0,025 — S: 0,15 · 0,75 · 0,1",
+   "a": "<p>P(II)xP(ID)= 0,02</p><p>P(IS)xP(SD)= 0,0175</p><p>P(ID)xP(DD)= 0,025</p><p><b>2y PD =0,0625</b></p>"
+  },
+  {
+   "id": "ex2019jan-2-3",
+   "topics": [
+    "III3"
+   ],
+   "src": "18 Jan 2019 · Q2.3",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 18 Jan 2019 · Q 2.3</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">2. Please consider the following information on the share prices of PTP company. <i>[Chart “Stock Prices of PTP”, 06-2018 to 01-2019: from about 5 rising to about 22 in Nov 2018, then collapsing to about 0 in Jan 2019.]</i> <b>1-year transition matrix</b> (rows = from, columns I · S · D): I: 0,8 · 0,175 · 0,025 — S: 0,15 · 0,75 · 0,1 (PTP rated “I”.)</span>Considering that the default intensity follows a Poisson process, what would be the default intensity necessary to get the 1-year default rate for PTP at the same moment considered in the previous question and the corresponding expected time to default? (2,5)",
+   "a": "<p><i>p(t)</i> = <i>e</i><sup>−λt</sup> - probability of survival for <i>t</i> years (to be shown afterwards)</p><p>1/λ - expected time to default</p><p>1-0,025 = <i>e</i><sup>−λt</sup> ⇔ ln(1-0,025) = −λ<i>t</i> ⇔ λ=-ln(1-0,025)/t => <b>λ=-ln(1-0,025) =2,53%</b> (as t=1)</p><p><b>1/λ = 39,5 years</b></p>"
+  },
+  {
+   "id": "ex2019jan-2-4",
+   "topics": [
+    "III3"
+   ],
+   "src": "18 Jan 2019 · Q2.4",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 18 Jan 2019 · Q 2.4</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">2.3: default intensity of a Poisson process, λ = 2,53% (1-year default rate 0,025).</span>Departing from the previous question, which additional information would you need to calculate the cumulative probability of default of PTP for <i>t</i> years assuming that default follows a Cox process and how would you calculate it. (2,0)",
+   "a": "<ul><li>Variations of λ along time</li></ul>"
+  },
+  {
+   "id": "ex2020jan-1-1",
+   "topics": [
+    "I4"
+   ],
+   "src": "10 Jan 2020 · Q1.1",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 10 Jan 2020 · Q 1.1</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">1. Please consider the following information on the Euro area money market and Portuguese Government debt yields (interest rates, %), <b>30 Dec.2019 / 31 Jan.2019</b>. <b>Euribor:</b> Overnight -0,485 / -0,40 · 1 week -0,480 / -0,38 · 1 month -0,470 / -0,37 · 3 months -0,425 / -0,30 · 6 months -0,280 / -0,24 · 1 year -0,269 / -0,11. <b>Portuguese Government Debt:</b> 2 years -0,557 / -0,09 · 5 years -0,136 / 0,47 · 10 years 0,403 / 1,67</span>Compute the price of a futures contract for the 3-month Euribor, with expiry date on the 10th April 2020, for the most recent date represented. (2,0)",
+   "a": "<ul><li>Implied interest rate is approximately the <sub>0,25</sub>f<sub>0,25</sub></li></ul><p><i>Not the official solution (worked from the correction's hint and the formula used in the 10 Jan 2018 correction):</i> <sub>0,25</sub>f<sub>0,25</sub> = [(1+s<sub>0,5</sub>)<sup>0,5</sup>/(1+s<sub>0,25</sub>)<sup>0,25</sup>]<sup>1/0,25</sup> − 1 = [(1−0,00280)<sup>0,5</sup>/(1−0,00425)<sup>0,25</sup>]<sup>4</sup> − 1 ≈ −0,135% => Futures price = 100 − (−0,135) ≈ <b>100,135</b></p>"
+  },
+  {
+   "id": "ex2020jan-1-2",
+   "topics": [
+    "I3"
+   ],
+   "src": "10 Jan 2020 · Q1.2",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 10 Jan 2020 · Q 1.2</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">1. Please consider the following information on the Euro area money market and Portuguese Government debt yields (interest rates, %), <b>30 Dec.2019 / 31 Jan.2019</b>. <b>Euribor:</b> Overnight -0,485 / -0,40 · 1 week -0,480 / -0,38 · 1 month -0,470 / -0,37 · 3 months -0,425 / -0,30 · 6 months -0,280 / -0,24 · 1 year -0,269 / -0,11. <b>Portuguese Government Debt:</b> 2 years -0,557 / -0,09 · 5 years -0,136 / 0,47 · 10 years 0,403 / 1,67</span>Considering that the 2 and 5 year maturities of the Portuguese Government debt are represented by bonds paying annual coupons of 0,5% and 0,75%, respectively, with a redemption value of 1000 Euros, compute the number of 5-year bonds to use in a duration hedging strategy of a portfolio comprised by 100 bonds representative of the 2-year maturity. (2,0)",
+   "a": "<p><b>The correction gives no solution for this question.</b></p><p><i>Not the official solution (method of the 2018/2019 corrections, 30 Dec.2019 yields):</i></p><p>q = - (P x Dp) / (H x Dh)</p><p>Price of 2 year bond = 5/(1-0,00557) + 1005/(1-0,00557)<sup>2</sup> = 1021,32 => P = 100 x 1021,32 = 102131,79; Duration = 1,995</p><p>Price of 5 year bond = 7,5/(1-0,00136) + … + 1007,5/(1-0,00136)<sup>5</sup> = 1044,48; Duration = 4,928</p><p>q = - (102131,79 x 1,995) / (1044,48 x 4,928) ≈ <b>-39,6</b> (sell ≈ 40 five-year bonds)</p>"
+  },
+  {
+   "id": "ex2020jan-1-3",
+   "topics": [
+    "I1",
+    "II1"
+   ],
+   "src": "10 Jan 2020 · Q1.3",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 10 Jan 2020 · Q 1.3</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">1. Please consider the following information on the Euro area money market and Portuguese Government debt yields (interest rates, %), <b>30 Dec.2019 / 31 Jan.2019</b>. <b>Euribor:</b> Overnight -0,485 / -0,40 · 1 week -0,480 / -0,38 · 1 month -0,470 / -0,37 · 3 months -0,425 / -0,30 · 6 months -0,280 / -0,24 · 1 year -0,269 / -0,11. <b>Portuguese Government Debt:</b> 2 years -0,557 / -0,09 · 5 years -0,136 / 0,47 · 10 years 0,403 / 1,67</span>Compute the 2-year spot rate using a bootstrapping methodology and identify the main conceptual differences to the yield to maturity. (1,5)",
+   "a": "<p><b>The correction gives no solution for this question.</b></p><p><i>Not the official solution. Assumptions: 30 Dec.2019 data, the 2-year bond of 1.2 (coupon 0,5%, price 1021,32 at the -0,557% yield) and the 1-year Euribor -0,269% as the 1-year spot rate.</i></p><p>1021,32 = 5/(1-0,00269) + 1005/(1+s<sub>2</sub>)<sup>2</sup> => <b>s<sub>2</sub> ≈ -0,558%</b></p><p>The <b>spot rate</b> discounts a single cash-flow at that maturity (zero-coupon rate); the <b>yield to maturity</b> is one rate applied to all cash-flows of a coupon bond, so it depends on the coupon (coupon effect) and assumes reinvestment at the same rate.</p>"
+  },
+  {
+   "id": "ex2020jan-1-4",
+   "topics": [
+    "I2"
+   ],
+   "src": "10 Jan 2020 · Q1.4",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 10 Jan 2020 · Q 1.4</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">1. Please consider the following information on the Euro area money market and Portuguese Government debt yields (interest rates, %), <b>30 Dec.2019 / 31 Jan.2019</b>. <b>Euribor:</b> Overnight -0,485 / -0,40 · 1 week -0,480 / -0,38 · 1 month -0,470 / -0,37 · 3 months -0,425 / -0,30 · 6 months -0,280 / -0,24 · 1 year -0,269 / -0,11. <b>Portuguese Government Debt:</b> 2 years -0,557 / -0,09 · 5 years -0,136 / 0,47 · 10 years 0,403 / 1,67</span>Considering the main explanatory theories of the term structure of interest rates, analyze the changes between the two dates mentioned in market expectations about the 3-month interest rates. (2,0)",
+   "a": "<ul><li>Compute <sub>0,25</sub>f<sub>0,25</sub> for both dates</li><li>According to the pure or non-pure version of expectations theory, <b>expectations increased</b>. The remaining theories do not allow any conclusions.</li></ul><p><i>Numbers (not in the correction):</i> 31 Jan.2019 ≈ -0,180%; 30 Dec.2019 ≈ -0,135%.</p>"
+  },
+  {
+   "id": "ex2020jan-1-5-1",
+   "topics": [
+    "II23"
+   ],
+   "src": "10 Jan 2020 · Q1.5.1",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 10 Jan 2020 · Q 1.5.1</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">1.5. Assuming that interest rate volatility is constant along time, please characterize an affine model for the term structure of interest rates in Portugal, with non-identified factors, including:</span>The observation and transition equations to be estimated. (1,25)",
+   "a": "<div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$y_{n,t}=\\frac1n\\left(A_n+B_{1,n}z_{1t}+B_{2,n}z_{2t}\\right)$$</div><div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$\\begin{bmatrix}z_{1,t+1}\\\\z_{2,t+1}\\end{bmatrix}=\\begin{bmatrix}\\varphi_1&0\\\\0&\\varphi_2\\end{bmatrix}\\begin{bmatrix}z_{1,t}\\\\z_{2,t}\\end{bmatrix}+\\begin{bmatrix}\\sigma_1&0\\\\0&\\sigma_2\\end{bmatrix}\\begin{bmatrix}\\upsilon_{1,t+1}\\\\\\upsilon_{2,t+1}\\end{bmatrix}$$</div>"
+  },
+  {
+   "id": "ex2020jan-1-5-2",
+   "topics": [
+    "II23"
+   ],
+   "src": "10 Jan 2020 · Q1.5.2",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 10 Jan 2020 · Q 1.5.2</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">1.5. Assuming that interest rate volatility is constant along time, please characterize an affine model for the term structure of interest rates in Portugal, with non-identified factors, including:</span>The equation(s) necessary to assess market expectations about the future path of short-term interest rates. (1,25)",
+   "a": "<div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$E_t\\left(y_{1,t+n}\\right)=E_t\\left(\\xi-\\tfrac12\\lambda^T\\alpha\\lambda+\\left[\\gamma^T-\\tfrac12\\lambda^T\\beta^T\\lambda\\right]z_{t+n}\\right)$$</div><div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$=\\xi-\\tfrac12\\lambda^T\\alpha\\lambda+\\left[\\gamma^T-\\tfrac12\\lambda^T\\beta^T\\lambda\\right]E_t\\left(z_{t+n}\\right)$$</div><div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$=\\xi-\\tfrac12\\lambda^T\\alpha\\lambda+\\left[\\gamma^T-\\tfrac12\\lambda^T\\beta^T\\lambda\\right]\\left[(I-\\Phi^n)\\theta+\\Phi^nz_t\\right]$$</div><p>With \\(\\beta=0\\)</p>"
+  },
+  {
+   "id": "ex2020jan-2-1",
+   "topics": [
+    "III1"
+   ],
+   "src": "10 Jan 2020 · Q2.1",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 10 Jan 2020 · Q 2.1</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">2. Please consider the following information: <i>Average One-Year Letter Rating Migration Rates, 1920-2017</i> (Moody’s). Row <b>Baa</b>: Aaa 0,03% · Aa 0,23% · A 4,20% · Baa 82,90% · Ba 4,55% · B 0,72% · Caa 0,13% · Ca-C 0,02% · WR 6,96% · <b>Default 0,25%</b>. <i>(Only the Baa row is shown here; the exam gives the full matrix.)</i></span>According to the information above, calculate the annual premium for a credit default (digital) swap with the following data: (4,0)<ul><li>Underlying asset - bonds issued by company FinCorp, with a Baa rating</li><li>Maturity = 2 years</li><li>Notional amount = €100000</li><li>CDS fee = <i>s</i>%</li><li>Frequency of swap payments = yearly</li><li>Default payment = 65%</li><li>Defaults assumed to occur at the swap payment dates (if a default occurs)</li><li>Risk-free interest rate = 0,5% (continuously compounded, flat yield curve)</li></ul>",
+   "a": "<p><b>The correction gives no solution for this question.</b></p><p><i>Not the official solution: Hull method from the slides (CDS valuation), with a constant hazard rate from the Baa 1-year default rate (0,25%), payments in arrears only if no default, default payment at the payment date.</i></p><p>λ = −ln(1−0,0025) = 0,2503%; survival P(1) = 0,9975, P(2) = 0,99501; PD year 1 = 0,0025, year 2 = 0,00249</p><p>PV expected payments = s (0,9975 e<sup>−0,005</sup> + 0,99501 e<sup>−0,01</sup>) = 1,97763 s</p><p>PV expected pay-off = 0,65 (0,0025 e<sup>−0,005</sup> + 0,00249 e<sup>−0,01</sup>) = 0,003222</p><p>s = 0,003222 / 1,97763 = <b>0,163%</b> => annual premium ≈ <b>€162,9</b></p>"
+  },
+  {
+   "id": "ex2020jan-2-2",
+   "topics": [
+    "III3"
+   ],
+   "src": "10 Jan 2020 · Q2.2",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 10 Jan 2020 · Q 2.2</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">2. Please consider the following information: <i>Average One-Year Letter Rating Migration Rates, 1920-2017</i> (Moody’s). Row <b>Baa</b>: Aaa 0,03% · Aa 0,23% · A 4,20% · Baa 82,90% · Ba 4,55% · B 0,72% · Caa 0,13% · Ca-C 0,02% · WR 6,96% · <b>Default 0,25%</b>. <i>(Only the Baa row is shown here; the exam gives the full matrix.)</i> 2.1: CDS on FinCorp bonds, Baa rating.</span>Calculate the 2-year cumulative probability of default, assuming that the annual hazard rate for the same Baa rating changes to 0,5% in the second year and new information arriving during the first period may generate two survival scenarios for the second year, being 0,7 the probability of the most likely scenario. (3,0)",
+   "a": "<div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$P(2)=P(1)\\cdot p(2|1)=e^{-\\lambda(1)}\\cdot E\\left[e^{-\\lambda(2)}\\right]=E\\left[e^{-[\\lambda(1)+\\lambda(2)]}\\right]$$</div><div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$p(2|1)=q\\,e^{-\\lambda(2,H)}+(1-q)\\,e^{-\\lambda(2,L)}=E\\left[e^{-\\lambda(2)}\\right]$$</div><p><i>The correction stops at these formulas (no numbers).</i></p><p><i>Not the official numbers, following the professor's 19 Jan 2021 spreadsheet for the same question (higher hazard = most likely scenario, the other scenario keeps the year-1 hazard):</i> λ(1) = −ln(1−0,0025) = 0,2503% => P(1) = 0,9975; q = 0,7, λ(2,H) = 0,5%, λ(2,L) = 0,2503% => p(2|1) = 0,7 e<sup>−0,005</sup> + 0,3 e<sup>−0,002503</sup> = 0,99576; P(2) = 0,9975 × 0,99576 = 0,99327 => <b>2y cumulative PD = 1 − P(2) ≈ 0,673%</b></p>"
+  },
+  {
+   "id": "ex2020jan-2-3",
+   "topics": [
+    "III2"
+   ],
+   "src": "10 Jan 2020 · Q2.3",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 10 Jan 2020 · Q 2.3</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">2. FinCorp, Baa-rated company (CDS in 2.1).</span>What could you conclude from a sharp decrease in the share prices of FinCorp regarding its credit risk? In your answer, please characterize the methodology used to reach your conclusions, including the information you would need to present a quantified measure of credit risk based on that methodology, as well as its limitations. (3,0)",
+   "a": "<ul><li>Depends on the behaviour of other variables, e.g. MVA and liabilities</li><li>Ceteris paribus, this may be interpreted as suggesting a <b>PD increase</b>, according to <b>Merton Model</b>.</li></ul>"
+  },
+  {
+   "id": "ex2021jan-1-1",
+   "topics": [
+    "II1",
+    "I2"
+   ],
+   "src": "19 Jan 2021 · Q1.1",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 19 Jan 2021 · Q 1.1</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">1. Considering the estimates for the parameters β<sub>o</sub> and β<sub>1</sub> in the Svensson methodology and two different dates for the Portuguese yield curve: <b>4 Jan.2021:</b> β<sub>o</sub> = 0.002, β<sub>1</sub> = -0.043 · <b>4 Jan.2020:</b> β<sub>o</sub> = 0.005, β<sub>1</sub> = -0.022</span>Interpret the main changes occurred in the yield curve between the two dates, considering the different explanatory theories of the term structure of interest rates. (2,5/20)",
+   "a": "<ul><li>Interpretation of the parameters</li><li>Main changes:<ul><li><b>Non-parallel downward shift</b> of the yield curve, with an <b>increase in the slope</b> of the yield curve</li></ul></li></ul><p>Interpretation of the curve shifts:</p><ul><li><b>expectations theory</b> - reduction of expected future short-term interest rates, namely in the next few years</li><li><b>liquidity preference theory</b> – increase in the long-term liquidity premium</li><li><b>preferred habitat theory</b> – a mix of the former two</li><li><b>segmentation theory</b> – changes result from the interaction of supply and demand in each maturity bucket, e.g. impact of monetary policy decisions on the short-end of the curve and increasing risk-aversion in the markets, leading to an increase in the demand of long-term govt bonds.</li></ul>"
+  },
+  {
+   "id": "ex2021jan-1-2",
+   "topics": [
+    "II23"
+   ],
+   "src": "19 Jan 2021 · Q1.2",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 19 Jan 2021 · Q 1.2</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">1. Considering the estimates for the parameters β<sub>o</sub> and β<sub>1</sub> in the Svensson methodology and two different dates for the Portuguese yield curve: <b>4 Jan.2021:</b> β<sub>o</sub> = 0.002, β<sub>1</sub> = -0.043 · <b>4 Jan.2020:</b> β<sub>o</sub> = 0.005, β<sub>1</sub> = -0.022</span>Assuming that:<ul><li>most shifts in this yield curve are parallel or just involve changes in the slope;</li><li>the volatility of interest rates is constant;</li></ul>present an adequate affine model to characterize the behavior and the shape of the curve along time, by specifying the main equations (e.g. the spot, the one-period forward, the volatility and the term premium curves). (2,5/20)",
+   "a": "<ul><li>Main equations of the <b>2-factor Vasicek model</b> – equations 84, 88, 89 and 90</li></ul><p><i>The equations, as written in the 10 Jan 2018 correction (same question):</i></p><div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$y_{n,t}=\\frac1n\\left(A_n+B_{1,n}z_{1t}+B_{2,n}z_{2t}\\right)$$</div><div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$f_{n,t}=\\delta+\\frac12\\sum_{i=1}^{2}\\left[\\lambda_i^2\\sigma_i^2-\\left(\\lambda_i\\sigma_i+\\frac{1-\\varphi_i^n}{1-\\varphi_i}\\sigma_i\\right)^2\\right]+\\sum_{i=1}^{2}\\left[\\varphi_i^nz_{it}\\right]$$</div><div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$\\Lambda_{n,t}=\\sum_{i=1}^{k}\\left[-\\lambda_i\\sigma_i^2B_{i,n}-\\frac{B_{i,n}^{\\,2}\\sigma_i^2}{2}\\right]$$</div><div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$Var_t\\left(y_{n,t+1}\\right)=\\frac{1}{n^2}\\sum_{i=1}^{k}\\left(B_{i,n}^2\\sigma_i^2\\right)$$</div>"
+  },
+  {
+   "id": "ex2021jan-1-3",
+   "topics": [
+    "II1",
+    "II23",
+    "I2"
+   ],
+   "src": "19 Jan 2021 · Q1.3",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 19 Jan 2021 · Q 1.3</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">1. Considering the estimates for the parameters β<sub>o</sub> and β<sub>1</sub> in the Svensson methodology and two different dates for the Portuguese yield curve: <b>4 Jan.2021:</b> β<sub>o</sub> = 0.002, β<sub>1</sub> = -0.043 · <b>4 Jan.2020:</b> β<sub>o</sub> = 0.005, β<sub>1</sub> = -0.022 (1.1: Svensson; 1.2: 2-factor affine model.)</span>Explain how could you obtain an estimate for the 3-month Euribor rate at a given future date considering the models employed in the two previous questions. (2,5/20)",
+   "a": "<ul><li>Estimate the yield curve and compute the <b>forward rate</b> from the 3-month spot rate and the spot rate for a maturity corresponding to 3 months + time to settlement, <span style=\"overflow-wrap:anywhere\">f(m+n) = [(1+s(m+n))^(m+n)/(1+s(m))^(m)]^(1/n)-1</span>, i.e. assuming that the <b>pure version of expectations theory</b> holds.</li></ul>"
+  },
+  {
+   "id": "ex2021jan-1-4",
+   "topics": [
+    "I4",
+    "RND"
+   ],
+   "src": "19 Jan 2021 · Q1.4",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 19 Jan 2021 · Q 1.4</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">1.3: estimate of the 3-month Euribor rate at a given future date from the Svensson and affine models.</span>Explain the main differences in the informational content about this future value of the 3-month Euribor rate if you use futures and option prices. comparing to the previous questions. (2,5/20)",
+   "a": "<ul><li><b>Expected value vs the full RND</b></li></ul>"
+  },
+  {
+   "id": "ex2021jan-2-1",
+   "topics": [
+    "III1"
+   ],
+   "src": "19 Jan 2021 · Q2.1",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 19 Jan 2021 · Q 2.1</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">2. Please consider the following information about the stock prices of FinCorp Bank, as well as the marginal probabilities of default at the initial date in the chart: <i>[Chart 06-2018 to 01-2019: price rises from about 5 to about 22 in Nov 2018, then collapses to about 0 in Jan 2019.]</i> Maturity 1 year: PD 1,0% · Maturity 2 years: PD 2,0%</span>Compute the premium of a credit default swap for that initial date, with the following features and assuming that interest rates are zero for all relevant maturities: (2,5/20) Maturity = 2 years · Notional = € 20.000.000 · Payment in case of default = 70% of the notional",
+   "a": "<p><i>Check: the PDF line uses (1-0.7) × 0.02 = 0.014 and then 0.014 x 0.99 + 0.007 = 0.0198; the arithmetic is 0.02086, which is what the professor's spreadsheet uses.</i></p><p>Answer: Binomial tree in the slides or the computation in excel</p><p><b>Binomial tree:</b></p><p>E<sub>1</sub>[<i>pay-off</i>(2)|ND] = <i>pay-off</i> in case of no default *(1-PD) + <i>pay-off</i> in default *PD =0 x (1− 0.02) + (1-0.7) x 0.02 = 0.014</p><p>E<sub>1</sub>[<i>pay-off</i>(2)|D] = 0.7</p><p>E<sub>0</sub>[X(2)] = E<sub>1</sub>[<i>pay-off</i>(2)|ND]*(1-PD) + E<sub>1</sub>[<i>pay-off</i>(2)|D]*PD = 0.014 x (1– 0.01) + 0.7 x 0.01 = 0.0198</p><p><i>From the professor's correction spreadsheet (IRCRM_Jan21_Correction_Criteria.xlsx):</i></p><ul><li>Tree: E<sub>1</sub>[pay-off(2)|ND] = 0×(1−0,02) + 0,7×0,02 = 0,014; E<sub>0</sub>[X(2)] = 0,014×(1−0,01) + 0,7×0,01 = 0,02086; V(0,2) = F(0,2)×E<sub>0</sub>[X(2)]×notional = 1×0,02086×20000000 = 417200 => <b>Annual Premium = 208600</b></li><li>Excel (hazard rates λ1 = 0,01, λ2 = 0,02, r = 0, RR = 0,3): survival 0,99005 and 0,97045; PV of expected payment = 1,96050 × fee; expected pay-off = (1−RR)×PD = 0,006965 + 0,013723 = 0,020688 => <b>Annual Premium = 1,0552% = €211050</b></li></ul>"
+  },
+  {
+   "id": "ex2021jan-2-2-1",
+   "topics": [
+    "III3"
+   ],
+   "src": "19 Jan 2021 · Q2.2.1",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 19 Jan 2021 · Q 2.2.1</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">2. Please consider the following information about the stock prices of FinCorp Bank, as well as the marginal probabilities of default at the initial date in the chart: <i>[Chart 06-2018 to 01-2019: price rises from about 5 to about 22 in Nov 2018, then collapses to about 0 in Jan 2019.]</i> Maturity 1 year: PD 1,0% · Maturity 2 years: PD 2,0% 2.2. Consider the following information about the 1-year rating transition matrix available from the statistics of a recognized rating agency at the same date (rows = from; columns I · S · D): <b>I:</b> 0,90 · 0,09 · 0,01 — <b>S:</b> 0,10 · 0,85 · 0,05</span>Assuming that the default intensity follows a Poisson process and that FinCorp Bank had a rating of “I”, what would be the default intensity necessary to get the 1-year default rate at that date and the corresponding expected time to default? (2,5/20)",
+   "a": "<ul><li>See excel file</li></ul><p><i>From the professor's correction spreadsheet (IRCRM_Jan21_Correction_Criteria.xlsx):</i></p><p>P(t) = e<sup>−λt</sup></p><p>PD = 1-P(t) = 0,01 => P(t) =1- 0,01 =0,99 => 0,99=exp(-λt)=> ln (0,99) =-λt => λ = -ln(0,99)/t</p><p><b>λ = 1,005%</b></p><p>Expected time of default = 1/λ = <b>99,5 years</b></p>"
+  },
+  {
+   "id": "ex2021jan-2-2-2",
+   "topics": [
+    "III3"
+   ],
+   "src": "19 Jan 2021 · Q2.2.2",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 19 Jan 2021 · Q 2.2.2</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">2.2. Consider the following information about the 1-year rating transition matrix available from the statistics of a recognized rating agency at the same date (rows = from; columns I · S · D): <b>I:</b> 0,90 · 0,09 · 0,01 — <b>S:</b> 0,10 · 0,85 · 0,05 2.2.1: λ = 1,005% (rating “I”, 1-year PD 1%).</span>Calculate the 2-year cumulative probability of default, assuming that the annual hazard rate for the same rating changes to 1,5% in the second year and new information arriving during the first period may generate two survival scenarios for the second year, being 0,8 the probability of the most likely scenario. (2,5/20)",
+   "a": "<div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$P(2)=P(1)\\cdot p(2|1)=e^{-\\lambda(1)}\\cdot E\\left[e^{-\\lambda(2)}\\right]=E\\left[e^{-[\\lambda(1)+\\lambda(2)]}\\right]$$</div><div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$p(2|1)=q\\,e^{-\\lambda(2,H)}+(1-q)\\,e^{-\\lambda(2,L)}=E\\left[e^{-\\lambda(2)}\\right]$$</div><p>2y cumulative PD = 1 – P(2)</p><p><i>From the professor's correction spreadsheet (IRCRM_Jan21_Correction_Criteria.xlsx):</i></p><p>P(1) = exp(-λ) = 0,99</p><p>Assuming that the higher PD (1,5%) corresponds to λ(2,H), being the most likely scenario and λ(2,L)=1%</p><p>q = 0,8 · λ(2,H) = 0,015 · λ(2,L) = 0,01</p><p>p(2|1) = 0,8 e<sup>−0,015</sup> + 0,2 e<sup>−0,01</sup> = 0,98610</p><p>P(2) = 0,99 × 0,98610 = 0,97624</p><p><b>1-P(2) = 2,376%</b></p>"
+  },
+  {
+   "id": "ex2021jan-2-3",
+   "topics": [
+    "III2"
+   ],
+   "src": "19 Jan 2021 · Q2.3",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 19 Jan 2021 · Q 2.3</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">2. Please consider the following information about the stock prices of FinCorp Bank, as well as the marginal probabilities of default at the initial date in the chart: <i>[Chart 06-2018 to 01-2019: price rises from about 5 to about 22 in Nov 2018, then collapses to about 0 in Jan 2019.]</i> Maturity 1 year: PD 1,0% · Maturity 2 years: PD 2,0%</span>Interpret the behavior of the probability of default according to the chart by using a structural model, explaining how would you estimate it and presenting the main assumptions, equations and limitations of the model. (2,5/20)",
+   "a": "<p><i>Check: the correction writes “PD = probability of MVA &gt; Debt”; in the Merton model default is MVA &lt; Debt at maturity. Learn it as MVA &lt; Debt.</i></p><ul><li><b>Merton Model</b></li><li>Stock price – price of a <b>call-option on the market value of assets</b>, with the strike price being the redemption value of debt</li><li>PD = probability of MVA &gt; Debt</li><li>Model equations</li><li>The stock price suggests an approximation to a default status</li></ul>"
+  },
+  {
+   "id": "ex2021feb-1-1",
+   "topics": [
+    "III5"
+   ],
+   "src": "5 Feb 2021 · Q1.1",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 5 Feb 2021 · Q 1.1</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">1. Considering a loan portfolio with 10 contracts, each with a value equal to 5 Million €, compute:</span>Its Credit-VaR, under the Gaussian Copula hypothesis and taking into account the following data: (4,0)<br>Portfolio amount = 50 M€ · 1y Probability of Default (PD) = 10% · Correlation coefficient (ρ) = 0.2 · Recovery Rate (RR) = 40%",
+   "a": "<p>- see excel file</p><p><i>From the professor's correction spreadsheet (IRCRM_Feb21_Correction_Criteria.xlsx):</i></p><p>VaR % = 0,999 · ρ = 0,2 · 1y PD = 0,1 · RR = 0,4 · EAD = 50</p><p>WCDR = NORMSDIST((NORMSINV(PD) + SQRT(ρ)·NORMSINV(0,999)) / SQRT(1−ρ)) = <b>0,5447</b></p><p>Credit-VaR = WCDR × (1−RR) × EAD = 0,5447 × 0,6 × 50 = <b>16,34 M€</b></p><p>(Same with ρ = 0: WCDR = 0,10, Credit-VaR = 3,0 M€.)</p>"
+  },
+  {
+   "id": "ex2021feb-1-2",
+   "topics": [
+    "III5"
+   ],
+   "src": "5 Feb 2021 · Q1.2",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 5 Feb 2021 · Q 1.2</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">1. Considering a loan portfolio with 10 contracts, each with a value equal to 5 Million €, compute: Portfolio amount = 50 M€ · 1y Probability of Default (PD) = 10% · Correlation coefficient (ρ) = 0.2 · Recovery Rate (RR) = 40% · 1.1: Credit-VaR = 16,34 M€ (99,9%).</span>The minimum number of contracts to get into default, in order to reach a credit loss corresponding to the Credit-VaR computed in the previous question, and the probability of getting that number of contacts into default, assuming that all these are independent. (4,0)",
+   "a": "<p>- see excel file</p><p><i>From the professor's correction spreadsheet (IRCRM_Feb21_Correction_Criteria.xlsx):</i></p><p>Default Amount = Credit-VaR / (1−RR) = 16,34 / 0,6 = 27,24 M€</p><p>No contracts = 27,24 / 5 = 5,45 => <b>Minimum No. Contracts = 6</b></p><p>Probability (binomial, N = 10, p = 0,1, independent): P(6) = C(10,6) 0,1<sup>6</sup> 0,9<sup>4</sup> = <b>0,000138</b> (0,0138%)</p>"
+  },
+  {
+   "id": "ex2021feb-1-3",
+   "topics": [
+    "III5"
+   ],
+   "src": "5 Feb 2021 · Q1.3",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 5 Feb 2021 · Q 1.3</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">1. Considering a loan portfolio with 10 contracts, each with a value equal to 5 Million €, compute: 1.1: Gaussian copula Credit-VaR (ρ = 0,2) = 16,34 M€ ⇒ 6 defaults; 1.2: probability of 6 defaults if independent = 0,0138%.</span>How do you compare the results obtained in the two previous questions? (2,0)",
+   "a": "<ul><li><b>correlation increases Credit-VaR</b></li></ul>"
+  },
+  {
+   "id": "ex2021feb-2-1",
+   "topics": [
+    "II21"
+   ],
+   "src": "5 Feb 2021 · Q2.1",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 5 Feb 2021 · Q 2.1</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">2. Assuming that you have a financial asset whose price follows a stochastic process corresponding to a Geometric Brownian Motion, with a drift equal to 0,1 and a volatility of 25% (both per annum):</span>Compute an estimate for this asset price one week from today, being the current price equal to 120 and the random component equal to zero. (2,5)",
+   "a": "<p>- see excel</p><p><i>From the professor's correction spreadsheet (IRCRM_Feb21_Correction_Criteria.xlsx):</i></p><p>S0 = 120 · μ = 0,1 · σ = 0,25 · dt = 1/52 = 0,01923</p><p>dS/S = μ dt = 0,1 × 1/52 = 0,001923</p><p>S1 = S0 (1 + dS/S) = <b>120,23</b></p>"
+  },
+  {
+   "id": "ex2021feb-2-2",
+   "topics": [
+    "II21"
+   ],
+   "src": "5 Feb 2021 · Q2.2",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 5 Feb 2021 · Q 2.2</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">2. Assuming that you have a financial asset whose price follows a stochastic process corresponding to a Geometric Brownian Motion, with a drift equal to 0,1 and a volatility of 25% (both per annum):</span>Characterize the distribution of the growth rate of the asset price, also computing the expected value and the variance of this growth rate for a period of one week. (2,5)",
+   "a": "<p>- see excel</p><p><i>The spreadsheet only says: “Use the parameters of the previous question. Explain how you move from the distribution of the asset to the distribution of its growth rate (Itô's Lemma)”.</i></p><p><i>Not the official numbers (worked from the slides, Probability Distribution):</i></p><div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$\\frac{dS}{S}=\\mu dt+\\sigma dz,\\quad G=\\ln S\\ \\Rightarrow\\ dG=\\left(\\mu-\\frac{\\sigma^2}{2}\\right)dt+\\sigma dz$$</div><div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$\\ln S_T-\\ln S_0\\sim\\phi\\left[\\left(\\mu-\\frac{\\sigma^2}{2}\\right)T,\\ \\sigma^2T\\right]$$</div><p>T = 1/52: mean = (0,1 − 0,03125)/52 = <b>0,00132</b>; variance = 0,0625/52 = <b>0,00120</b> (st. dev. 3,47%). The growth rate is normally distributed ⇒ the price is lognormally distributed.</p>"
+  },
+  {
+   "id": "ex2021feb-2-3",
+   "topics": [
+    "II21"
+   ],
+   "src": "5 Feb 2021 · Q2.3",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 5 Feb 2021 · Q 2.3</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">2. Assuming that you have a financial asset whose price follows a stochastic process corresponding to a Geometric Brownian Motion, with a drift equal to 0,1 and a volatility of 25% (both per annum):</span>Present the stochastic process of the forward rate on this asset price. (3,0)",
+   "a": "<p>- see excel <i>(spreadsheet: “See slide 123”)</i></p><p><i>From the slides (Application to forward contracts):</i></p><div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$F=Se^{r(T-t)},\\quad \\frac{\\partial F}{\\partial S}=e^{r(T-t)},$$</div><div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$\\frac{\\partial^2F}{\\partial S^2}=0,\\ \\frac{\\partial F}{\\partial t}=-rSe^{r(T-t)}$$</div><div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$dF=\\left[e^{r(T-t)}\\mu S-rSe^{r(T-t)}\\right]dt+e^{r(T-t)}\\sigma S\\,dz$$</div><div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$\\Rightarrow\\ dF=(\\mu-r)F\\,dt+\\sigma F\\,dz$$</div><p>Like S, F follows a GBM, with the same volatility and a trend of μ-r (instead of μ): here \\(dF=(0{,}1-r)F\\,dt+0{,}25F\\,dz\\).</p>"
+  },
+  {
+   "id": "ex2021feb-2-4",
+   "topics": [
+    "II21"
+   ],
+   "src": "5 Feb 2021 · Q2.4",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 5 Feb 2021 · Q 2.4</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">2. Assuming that you have a financial asset whose price follows a stochastic process corresponding to a Geometric Brownian Motion, with a drift equal to 0,1 and a volatility of 25% (both per annum):</span>What would happen to the stochastic process if shorter periods of time were considered in the previous questions? (2,0)",
+   "a": "<p>- Slide 110</p><p>- When Δt → 0, the path becomes <b>much more irregular</b>, as the size of the movement in the variable in time Δt is proportional to the sqrt(Δt). When Δt is small, the sqrt(Δt) is much larger than Δt => the changes in z will be much larger than Δt, as \\(\\Delta z=\\epsilon\\sqrt{\\Delta t}\\)</p>"
+  },
+  {
+   "id": "ex2022jan-1-1",
+   "topics": [
+    "III5"
+   ],
+   "src": "20 Jan 2022 · Q1.1",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 20 Jan 2022 · Q 1.1</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">1. Considering a bank portfolio of homogeneous corporate loans, comprising 100 contracts, each with a value of 1 Million € and a 5-year maturity, compute and interpret the results of the following questions:</span>The 1-year Credit-VaR at 99% level of confidence and the capital requirement for this portfolio, under the Gaussian Copula hypothesis and taking into account the following data obtained from internal models: (4,0/20)<br>1y PD = 2% · Correlation coefficient (ρ) = 0.01 · Recovery Rate (RR) = 40%",
+   "a": "<p><b>The correction gives no solution for this question.</b></p><p><i>Not the official solution (method of the 5 Feb 2021 spreadsheet and the Gaussian copula slides; capital requirement with the slides' Basel formula, M = 5, using the internal ρ = 0.01 and the 99% WCDR as the question asks):</i></p><div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$WCDR=V(X,T)=N\\left(\\frac{N^{-1}[Q(T)]+\\sqrt{\\rho}\\,N^{-1}(X)}{\\sqrt{1-\\rho}}\\right)$$</div><div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$=N\\left(\\frac{N^{-1}(0.02)+\\sqrt{0.01}\\,N^{-1}(0.99)}{\\sqrt{0.99}}\\right)$$</div><div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$=0.0336$$</div><p>1y Credit-VaR = WCDR x LGD x EAD = 0.0336 x 0.6 x 100 M€ = <b>2.02 M€</b> (EL = 0.02 x 0.6 x 100 = 1.2 M€)</p><p>Capital Requirement = EAD x LGD x (WCDR − PD) x MA; b = [0.11852 − 0.05478 ln(0.02)]² = 0.1108; MA = (1 + (5 − 2.5) b)/(1 − 1.5 b) = 1.531</p><p>=> 100 x 0.6 x (0.0336 − 0.02) x 1.531 = <b>1.25 M€</b> (0.82 M€ without the maturity adjustment)</p>"
+  },
+  {
+   "id": "ex2022jan-1-2",
+   "topics": [
+    "III5"
+   ],
+   "src": "20 Jan 2022 · Q1.2",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 20 Jan 2022 · Q 1.2</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">1. Considering a bank portfolio of homogeneous corporate loans, comprising 100 contracts, each with a value of 1 Million € and a 5-year maturity, compute and interpret the results of the following questions: 1y PD = 2% · Correlation coefficient (ρ) = 0.01 · Recovery Rate (RR) = 40% · 1.1: 99% Credit-VaR.</span>The minimum number of contracts to get into default, in order to obtain a credit loss corresponding to the Credit-VaR computed in the previous question, and the probability of getting that number of contracts into default, assuming they are independent. (2,5/20)",
+   "a": "<ul><li><b>similar figures</b>, due to the fact that the correl.coefficient in 1.1. is close to zero.</li></ul><p><i>Numbers, not in the correction (method of the 5 Feb 2021 spreadsheet):</i> Default amount = 2.02 / 0.6 = 3.36 M€ => 3.36 contracts => <b>minimum 4 contracts</b>; P(4) = C(100,4) 0.02<sup>4</sup> 0.98<sup>96</sup> = <b>0.090</b> (binomial, independent defaults).</p>"
+  },
+  {
+   "id": "ex2022jan-1-3",
+   "topics": [
+    "III1"
+   ],
+   "src": "20 Jan 2022 · Q1.3",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 20 Jan 2022 · Q 1.3</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">1. Considering a bank portfolio of homogeneous corporate loans, comprising 100 contracts, each with a value of 1 Million € and a 5-year maturity, compute and interpret the results of the following questions: 1y PD = 2% · Correlation coefficient (ρ) = 0.01 · Recovery Rate (RR) = 40%</span>The premium of a 2-year credit default swap on the loan portfolio, assuming that interest rates are zero for all relevant maturities, the hazard rate corresponds to the 1y PD in question 1.1. and all potential defaults occur at the end of a year. (3,5/20)",
+   "a": "<p><b>The correction gives no solution for this question.</b></p><p><i>Not the official solution (method of the 19 Jan 2021 spreadsheet: λ = 0.02, r = 0, RR = 40%, no accrual):</i></p><p>Survival: e<sup>−0.02</sup> = 0.98020, e<sup>−0.04</sup> = 0.96079 => PV of expected payments = 1.94099 x fee</p><p>Expected pay-off = (1−RR) x PD = 0.6 x (0.01980 + 0.01941) = 0.023526</p><p>Annual premium = 0.023526 / 1.94099 = <b>1.212%</b> => on 100 M€: <b>≈ 1.21 M€ per year</b></p>"
+  },
+  {
+   "id": "ex2022jan-2-1",
+   "topics": [
+    "I2",
+    "I1"
+   ],
+   "src": "20 Jan 2022 · Q2.1",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 20 Jan 2022 · Q 2.1</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">2. Consider the following information about the evolution of the Portuguese yield curve, where Euro money market rates are used for maturities up to 1 year and yields-to-maturity of fixed rate Portuguese Government bonds are considered for maturities beyond: <i>[Chart “Yield Curve - Portugal”, 31-12-2020 vs 18-01-2022: both about -0,5% at the short end with a dip near 2 years; the 18-01-2022 curve is higher from 2 years on (5y about -0,1 vs -0,4; 10y about 0,6 vs 0,0; 15y about 0,9 vs 0,4; 30y about 1,5 vs 1,25) and has a bend around 10 years.]</i></span>Characterize the main factors behind the changes observed in the yield curve, according to the explanatory theories of the term structure of interest rates, the main drawbacks of using this information to characterize the term structure of interest rates and the alternative ways to characterize it. (2,5/20)",
+   "a": "<ul><li><b>expectations theory</b> – increase in expectations, with the implied forwards corresponding to the expected values in the pure version and the variation corresponding to the change in expectations, in non-pure version.</li><li><b>segmentation and preferred habitat theory</b> – no relationship between different rates</li><li><b>liquidity theory</b> – increased term premium</li><li>different ways to characterize the term structure of interest rates – <b>spot, forward and discount curves</b></li></ul>"
+  },
+  {
+   "id": "ex2022jan-2-2",
+   "topics": [
+    "II1"
+   ],
+   "src": "20 Jan 2022 · Q2.2",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 20 Jan 2022 · Q 2.2</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">2. Consider the following information about the evolution of the Portuguese yield curve, where Euro money market rates are used for maturities up to 1 year and yields-to-maturity of fixed rate Portuguese Government bonds are considered for maturities beyond: <i>[Chart “Yield Curve - Portugal”, 31-12-2020 vs 18-01-2022: both about -0,5% at the short end with a dip near 2 years; the 18-01-2022 curve is higher from 2 years on (5y about -0,1 vs -0,4; 10y about 0,6 vs 0,0; 15y about 0,9 vs 0,4; 30y about 1,5 vs 1,25) and has a bend around 10 years.]</i></span>Describe the main pros and cons of using the Nelson-Siegel, Svensson and McCulloch methods to fit the yield curve, identifying the method you would choose and the main changes in the parameters between the two curves if you had opted for the Nelson-Siegel method. (2,5/20)",
+   "a": "<ul><li>Being a polynomial method, <b>McCullhoch</b> provides better in-sample fitting. However, the yield curve is unstable out of sample and tend to provide meaningless forward rates.</li><li><b>NS and Svensson</b> provide yield curve with more consistent shapes and economic meaning of the parameters, even though with worse in-sample fitting.</li><li><b>Svensson</b> is better whenever the curve has more than one inflection point, like the more recent curve</li></ul>"
+  },
+  {
+   "id": "ex2022jan-2-3-1",
+   "topics": [
+    "II1"
+   ],
+   "src": "20 Jan 2022 · Q2.3.1",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 20 Jan 2022 · Q 2.3.1</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">2. Consider the following information about the evolution of the Portuguese yield curve, where Euro money market rates are used for maturities up to 1 year and yields-to-maturity of fixed rate Portuguese Government bonds are considered for maturities beyond: <i>[Chart “Yield Curve - Portugal”, 31-12-2020 vs 18-01-2022: both about -0,5% at the short end with a dip near 2 years; the 18-01-2022 curve is higher from 2 years on (5y about -0,1 vs -0,4; 10y about 0,6 vs 0,0; 15y about 0,9 vs 0,4; 30y about 1,5 vs 1,25) and has a bend around 10 years.]</i> 2.3. Explain how would you fit the yield curve along time, by using:</span>A dynamic version of the Svensson method (2,0/20)",
+   "a": "<div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$s_{t,m}=\\beta_{0,t}+\\beta_{1,t}\\cdot\\left[1-e^{(-\\lambda_{1t}m)}\\right]/(\\lambda_{1t}m)$$</div><div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$+\\beta_2\\cdot\\left\\{\\left[1-e^{(-\\lambda_{1t}m)}\\right]/(\\lambda_{1t}m)-e^{(-\\lambda_{1t}m)}\\right\\}$$</div><div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$+\\beta_3\\cdot\\left\\{\\left[1-e^{(-\\lambda_{2t}m)}\\right]/(\\lambda_{2t}m)-e^{(-\\lambda_{2t}m)}\\right\\}$$</div><p>being \\(1/\\tau_1\\) by \\(\\lambda_1\\) and \\(1/\\tau_2\\) by \\(\\lambda_2\\)</p>"
+  },
+  {
+   "id": "ex2022jan-2-3-2",
+   "topics": [
+    "II23"
+   ],
+   "src": "20 Jan 2022 · Q2.3.2",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 20 Jan 2022 · Q 2.3.2</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">2.3. Explain how would you fit the yield curve along time, by using:</span>An affine model, assuming that the curve is mostly driven by two factors, one of them linked to the inflation rate and the volatility is constant, presenting the yield curve and the corresponding factor loading equations, as well as the model in a state-space form. (3,0/20)",
+   "a": "<div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$y_{n,t}=\\frac1n\\left(A_n+B_{1,n}z_{1t}+B_{2,n}z_{2t}\\right)$$</div><div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$A_n=A_{n-1}+\\delta+\\frac12\\sum_{i=1}^{k}\\left[\\lambda_i^2\\sigma_i^2-\\left(\\lambda_i\\sigma_i+B_{i,n-1}\\sigma_i\\right)^2\\right]$$</div><div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$B_{i,n}=\\left(1+B_{i,n-1}\\varphi_i\\right)$$</div><div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$\\begin{bmatrix}y_{1,t}\\\\ \\vdots\\\\ y_{l,t}\\\\ Var_t(y_{1,t+1})\\\\ \\vdots\\\\ Var_t(y_{l,t+1})\\\\ \\tilde\\pi_t\\end{bmatrix}=\\begin{bmatrix}a_{1,t}\\\\ \\vdots\\\\ a_{l,t}\\\\ a_{l+1,t}\\\\ \\vdots\\\\ a_{2l}\\\\ 0\\end{bmatrix}+\\begin{bmatrix}b_{1,1}&b_{2,1}\\\\ \\vdots&\\vdots\\\\ b_{1,l}&b_{2,l}\\\\ 0&0\\\\ \\vdots&\\vdots\\\\ 0&0\\\\ 0&b_\\pi\\end{bmatrix}\\begin{bmatrix}z_{1,t}\\\\ z_{2,t}\\end{bmatrix}+\\begin{bmatrix}\\upsilon_{1,t}\\\\ \\vdots\\\\ \\upsilon_{l,t}\\\\ \\upsilon_{l+1,t}\\\\ \\vdots\\\\ \\upsilon_{2l,t}\\\\ \\upsilon_\\pi\\end{bmatrix}$$</div>"
+  },
+  {
+   "id": "ex2024jan-1-1",
+   "topics": [
+    "III3"
+   ],
+   "src": "5 Jan 2024 · Q1.1",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 5 Jan 2024 · Q 1.1</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">1. Consider the following information about cumulative default rates for the different Moody’s main rating classifications (<i>Average cumulative issuer-weighted global default rates by letter rating, 1920-2022</i>). <b>Baa</b>, years 1–5: 0.2% · 0.7% · 1.2% · 1.7% · 2.3% <i>(only the Baa row is shown here; the exam gives all ratings, 20 years)</i></span>Compute the conditional marginal probability of default at year 2, given survival to year 1, for rating Baa. (1,5/20)",
+   "a": "<p>Conditional marginal probability of default: d(s|t) = 1- p(s|t) = 1-P(s)/P(t) = [P(t)-P(s)]/P(t) = -[P(s)-P(t)]/P(t) = -P’(t)/P(t) or = d’(s|t)/P(t)</p><p>Conditional marginal probability of surviving: p(s|t) = P(s)/P(t) = [1-0,007]/[1-0,002]=0,99499</p><p>d(s|t) = 1- p(s|t) => 1-0,99499=0,00501=<b>0,501%</b></p>"
+  },
+  {
+   "id": "ex2024jan-1-2",
+   "topics": [
+    "III3"
+   ],
+   "src": "5 Jan 2024 · Q1.2",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 5 Jan 2024 · Q 1.2</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">1. Consider the following information about cumulative default rates for the different Moody’s main rating classifications (<i>Average cumulative issuer-weighted global default rates by letter rating, 1920-2022</i>). <b>Baa</b>, years 1–5: 0.2% · 0.7% · 1.2% · 1.7% · 2.3% <i>(only the Baa row is shown here; the exam gives all ratings, 20 years)</i> 1.1: d(2|1) = 0,501% for Baa.</span>Compute the 2-year cumulative PD for the same rating and the corresponding expected time of default, assuming that the hazard rate is constant. (2,5)",
+   "a": "<p><i>P(t)</i> = <i>e</i><sup>−λt</sup> - probability of survival for <i>t</i> years => D(t) = 1- <i>e</i><sup>−λt</sup> = 1- <i>e</i><sup>−0,00501x 2</sup> = <b>1%</b></p><p>expected time to default (1/λ) = 1/0.00501 = <b>199,6 anos</b></p>"
+  },
+  {
+   "id": "ex2024jan-1-3",
+   "topics": [
+    "III1"
+   ],
+   "src": "5 Jan 2024 · Q1.3",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 5 Jan 2024 · Q 1.3</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">1. Consider the following information about cumulative default rates for the different Moody’s main rating classifications (<i>Average cumulative issuer-weighted global default rates by letter rating, 1920-2022</i>). <b>Baa</b>, years 1–5: 0.2% · 0.7% · 1.2% · 1.7% · 2.3% <i>(only the Baa row is shown here; the exam gives all ratings, 20 years)</i></span>Compute the annual premium for a credit default swap with the following data: (4,0/20)<ul><li>Underlying asset - bonds issued by a Baa-rated bank.</li><li>Maturity = 2 years</li><li>Notional amount = € 1 000 000</li><li>Frequency of swap payments = yearly</li><li>Default payment = 60%</li><li>Defaults assumed to occur at the swap payment dates (if a default occurs)</li><li>Risk-free interest rate = 4% (continuously compounded, flat yield curve)</li></ul>",
+   "a": "<p>See spreadsheet <i>(not among the files provided)</i></p><p><i>Not the official solution (Hull method from the slides, using the Baa cumulative default rates: unconditional PD 0,2% in year 1 and 0,5% in year 2; survival 0,998 and 0,993; premium paid at year-end if no default):</i></p><p>PV expected payments = s (0,998 e<sup>−0,04</sup> + 0,993 e<sup>−0,08</sup>) = 1,87552 s</p><p>PV expected pay-off = 0,6 (0,002 e<sup>−0,04</sup> + 0,005 e<sup>−0,08</sup>) = 0,003922</p><p>s = 0,003922/1,87552 = <b>0,209%</b> => <b>≈ €2 091 per year</b></p><p><i>(With the constant hazard λ = 0,00501 of 1.2 instead: ≈ €3 014 per year.)</i></p>"
+  },
+  {
+   "id": "ex2024jan-1-4",
+   "topics": [
+    "III2"
+   ],
+   "src": "5 Jan 2024 · Q1.4",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 5 Jan 2024 · Q 1.4</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">1. Company listed in a stock exchange (Baa-rated bank).</span>Explain how could you get an estimate for the hazard rate of a company listed in a stock exchange using a structural model, identifying the information required, the 2 main equations and the 2 unknowns to be estimated. (2,0/20)",
+   "a": "<ul><li>Structural models use stock prices to estimate PDs</li><li>2 key equations:</li></ul><div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$V_E=V_AN(d1)-e^{-rT}XN(d2)$$</div><div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$\\frac{V_A}{V_E}N(d1)\\sigma_A=\\eta\\sigma_A\\Leftrightarrow\\frac{V_A}{V_E}\\delta=\\eta$$</div><div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$\\Leftrightarrow\\delta=\\frac{\\eta}{V_A/V_E}\\Leftrightarrow\\delta=\\frac{\\sigma_E/\\sigma_A}{V_A/V_E}$$</div><div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$\\Leftrightarrow\\delta=\\frac{\\sigma_E}{\\sigma_A}\\frac{V_E}{V_A}\\Leftrightarrow V_A=\\frac{\\sigma_E}{\\sigma_A}\\frac{V_E}{\\delta}$$</div><ul><li><b>2 unknowns: σ<sub>A</sub> and V<sub>A</sub></b></li></ul>"
+  },
+  {
+   "id": "ex2024jan-2-1",
+   "topics": [
+    "II1",
+    "I2"
+   ],
+   "src": "5 Jan 2024 · Q2.1",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 5 Jan 2024 · Q 2.1</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">2. Considering the following information provided from the estimation of the German Yield Curve using the Svensson static methodology: <b>15 Dec.2023:</b> β<sub>o</sub> = 2,25%, β<sub>1</sub> = 1,75% · <b>15 Nov.2023:</b> β<sub>o</sub> = 2,75%, β<sub>1</sub> = 1,00%</span>Characterize the parameters in the table, the main changes in the yield curve between these dates and the potential advantages of using alternatively the Svensson methodology, comparing to polynomial and the Nelson and Siegel methodology. (2,5/20)",
+   "a": "<p>β<sub>o</sub> – asymptotic interest rate</p><p>β<sub>1</sub> – symmetric of the slope</p><p>(β<sub>o</sub> + β<sub>1</sub>) = instantaneous interest rate</p><p>Long term interest rate decreased, while short term interest rate increased => yield curve slope moved downwards.</p><ul><li>Svensson methodology ensures a smooth and adequate asymptotic behaviour of the spot and the forward curves (contrary to polynomial methods), allowing for more than one inflection point in the yield curve, while the NS model only allows for one point.</li></ul>"
+  },
+  {
+   "id": "ex2024jan-2-2",
+   "topics": [
+    "II1"
+   ],
+   "src": "5 Jan 2024 · Q2.2",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 5 Jan 2024 · Q 2.2</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">2. Considering the following information provided from the estimation of the German Yield Curve using the Svensson static methodology: <b>15 Dec.2023:</b> β<sub>o</sub> = 2,25%, β<sub>1</sub> = 1,75% · <b>15 Nov.2023:</b> β<sub>o</sub> = 2,75%, β<sub>1</sub> = 1,00%</span>Explain how could you use the Svensson methodology to estimate the yield curve along time and the procedure to decide between adopting the static Nelson-Siegel and Svensson methodologies (2,5/20)",
+   "a": "<p><b>DNSS:</b></p><div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$s_{t,m}=\\beta_{0,t}+\\beta_{1,t}\\cdot\\left[1-e^{(-\\lambda_{1t}m)}\\right]/(\\lambda_{1t}m)$$</div><div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$+\\beta_2\\cdot\\left\\{\\left[1-e^{(-\\lambda_{1t}m)}\\right]/(\\lambda_{1t}m)-e^{(-\\lambda_{1t}m)}\\right\\}$$</div><div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$+\\beta_3\\cdot\\left\\{\\left[1-e^{(-\\lambda_{2t}m)}\\right]/(\\lambda_{2t}m)-e^{(-\\lambda_{2t}m)}\\right\\}$$</div><ul><li>the NS model is a restricted version of the Svensson model with the restriction b<sub>3</sub> = 0 and/or t<sub>2</sub>→ 0. Thus, we can test the null hypothesis corresponding to those restrictions:</li></ul><div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$H_0:\\ \\beta_0=\\beta_1=\\ldots=\\beta_q=0$$</div><ul><li>The test is based on the following log-likelihood ratio test:</li></ul><div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$-2\\left(\\ln v-\\ln v^*\\right)\\sim\\chi^2(q)$$</div><p>where: <i>v</i> = likelihood function of the adjustment with restrictions; <i>v*</i> = likelihood function of the adjustment without restrictions; <i>q</i> = number of restrictions.</p><p>Maximum Likelihood Estimation Problem. <i>(The test statistic and the ML problem are tiny images in the correction; the statistic above is written from the slides.)</i></p>"
+  },
+  {
+   "id": "ex2024jan-2-3",
+   "topics": [
+    "I2",
+    "I3"
+   ],
+   "src": "5 Jan 2024 · Q2.3",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 5 Jan 2024 · Q 2.3</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">2. Considering the following information provided from the estimation of the German Yield Curve using the Svensson static methodology: <b>15 Dec.2023:</b> β<sub>o</sub> = 2,25%, β<sub>1</sub> = 1,75% · <b>15 Nov.2023:</b> β<sub>o</sub> = 2,75%, β<sub>1</sub> = 1,00%</span>Taking into account the explanatory theories of the term structure of interest rates, propose an investment or hedging strategy to be adopted by a manager of a portfolio comprising German Government Bonds. (2,5/20)",
+   "a": "<p>As the <b>slope is &lt;0</b>, according to the <b>expectations theory</b>, short-term interest rates are expected to fall. Therefore, the hedging strategy must be based in taking a <b>long exposure to long term bonds</b>:</p><div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$q=-\\frac{P'(y)}{H'(y)}=-\\frac{P\\times D_P}{H\\times D_H}$$</div>"
+  },
+  {
+   "id": "ex2024jan-2-4",
+   "topics": [
+    "II23"
+   ],
+   "src": "5 Jan 2024 · Q2.4",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 5 Jan 2024 · Q 2.4</span>Present the observation and the state equations of a 2-factor affine model to estimate the dynamics of a yield curve along time, including the inflation rate as an observed independent variable driven by a specific factor and assuming that the volatility of interest rates is constant. (2,5/20)",
+   "a": "<div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$\\begin{bmatrix}y_{1,t}\\\\ \\vdots\\\\ y_{l,t}\\\\ Var_t(y_{1,t+1})\\\\ \\vdots\\\\ Var_t(y_{l,t+1})\\\\ \\tilde\\pi_t\\end{bmatrix}=\\begin{bmatrix}a_{1,t}\\\\ \\vdots\\\\ a_{l,t}\\\\ a_{l+1,t}\\\\ \\vdots\\\\ a_{2l}\\\\ 0\\end{bmatrix}+\\begin{bmatrix}b_{1,1}&b_{2,1}&0\\\\ \\vdots&\\vdots&\\vdots\\\\ b_{1,l}&b_{2,l}&0\\\\ 0&0&0\\\\ \\vdots&\\vdots&\\vdots\\\\ 0&0&0\\\\ 0&b_{2\\pi}&b_{1\\pi}\\end{bmatrix}\\begin{bmatrix}z_{1,t}\\\\ z_{2,t}\\\\ z_{1\\pi,t}\\end{bmatrix}+\\begin{bmatrix}\\upsilon_{1,t}\\\\ \\vdots\\\\ \\upsilon_{l,t}\\\\ \\upsilon_{l+1,t}\\\\ \\vdots\\\\ \\upsilon_{2l,t}\\\\ \\upsilon_\\pi\\end{bmatrix}$$</div><div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$\\begin{bmatrix}z_{1,t+1}\\\\ z_{2,t+1}\\\\ z_{1\\pi,t+1}\\end{bmatrix}=\\begin{bmatrix}\\varphi_1&0&0\\\\0&\\varphi_2&0\\\\0&0&\\varphi_{1\\pi}\\end{bmatrix}\\begin{bmatrix}z_{1,t}\\\\ z_{2,t}\\\\ z_{1\\pi,t}\\end{bmatrix}+\\begin{bmatrix}\\sigma_1&0&0\\\\0&\\sigma_2&0\\\\0&0&\\sigma_{1\\pi}\\end{bmatrix}\\begin{bmatrix}\\varepsilon_{1,t+1}\\\\ \\varepsilon_{2,t+1}\\\\ \\varepsilon_{1\\pi,t+1}\\end{bmatrix}$$</div>"
+  },
+  {
+   "id": "ex2024jan29-1-1",
+   "topics": [
+    "III3"
+   ],
+   "src": "29 Jan 2024 · Q1.1",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 29 Jan 2024 · Q 1.1</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">1. Calculate the 2-year cumulative probability of default, assuming that:</span>The annual hazard rate is 0,5% in both years;",
+   "a": "<p><i>P(t)</i> = <i>e</i><sup>−λt</sup> - probability of survival for <i>t</i> years</p><p><i>1- P(t)</i> = 1-<i>e</i><sup>−λt</sup> - probability of default for <i>t</i> years</p><p>1-P(2) = D(2)= 1-<i>e</i><sup>−0,005*2</sup>= <b>0,995%</b></p>"
+  },
+  {
+   "id": "ex2024jan29-1-2",
+   "topics": [
+    "III3"
+   ],
+   "src": "29 Jan 2024 · Q1.2",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 29 Jan 2024 · Q 1.2</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">1. Calculate the 2-year cumulative probability of default, assuming that:</span>The annual hazard rate is 0,5% in the first year and increases to 0,7% in the 2<sup>nd</sup> year;",
+   "a": "<p><i>Check: the correction drops the “1 −”: it should read 1 − P(t) = 1 − e<sup>−[λ(1)+…+λ(t)]</sup> and 1 − P(2) = 1 − e<sup>−[0,005+0,007]</sup> = 1,1928%.</i></p><p><i>P(t)</i> = <i>e</i><sup>−[λ(1)+λ(2)+…+λ(t)]</sup> - probability of survival for <i>t</i> years</p><p><i>1- P(t)</i> = <i>e</i><sup>−[λ(1)+λ(2)+…+λ(t)]</sup> - probability of default for <i>t</i> years</p><p>1-P(2) = <i>e</i><sup>−[0,005+0,007]</sup> = <b>1,1928%</b></p>"
+  },
+  {
+   "id": "ex2024jan29-1-3",
+   "topics": [
+    "III3"
+   ],
+   "src": "29 Jan 2024 · Q1.3",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 29 Jan 2024 · Q 1.3</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">1. Calculate the 2-year cumulative probability of default, assuming that:</span>The annual hazard rate is 0,5% in the first year and may increase to 0,8% or decrease to 0,2% in the second year, being 0,6 the probability of the first scenario. (3,0/20)",
+   "a": "<div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$P(2)=P(1)\\cdot p(2|1)$$</div><p>1-P(2) = D (2)</p><div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$p(2|1)=q\\,e^{-\\lambda(2,H)}+(1-q)\\,e^{-\\lambda(2,L)}$$</div><p>P(1) = <i>e</i><sup>−[0,005]</sup> = 0,995012</p><div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$p(2|1)=0{,}6*e^{-0{,}008}+(1-0{,}6)*e^{-0{,}002}=0{,}9942$$</div><p>=> P(2) = 0,995012 · 0,9942 = 0,98946 => 1-P(2)=D(2)=<b>1,054%</b></p>"
+  },
+  {
+   "id": "ex2024jan29-2-1",
+   "topics": [
+    "II21"
+   ],
+   "src": "29 Jan 2024 · Q2.1",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 29 Jan 2024 · Q 2.1</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">2. Assuming that you have a financial asset whose price follows a stochastic process corresponding to a Geometric Brownian Motion, with a drift equal to 0,15 and a volatility of 30% (both per annum):</span>Compute an estimate for this asset price one week from today, being the current price equal to 150 and the random component equal to zero. (2,0/20)",
+   "a": "<div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$\\frac{\\Delta S}{S}=\\mu\\Delta t+\\sigma\\epsilon\\sqrt{\\Delta t}$$</div><p>=> ΔS/S = 0,15*0,019231 + 0,3*0*sqrt(0,019231) = 0,002885 =></p><p>ΔS = 0,002885*S = 0,002885*150 = 0,432692 => <b>S(1) = 150,432692</b></p>"
+  },
+  {
+   "id": "ex2024jan29-2-2",
+   "topics": [
+    "II21"
+   ],
+   "src": "29 Jan 2024 · Q2.2",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 29 Jan 2024 · Q 2.2</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">2. Assuming that you have a financial asset whose price follows a stochastic process corresponding to a Geometric Brownian Motion, with a drift equal to 0,15 and a volatility of 30% (both per annum):</span>Characterize the distribution of the growth rate of the asset price, also computing the expected value and the variance of this growth rate for a period of one week. (2,0)",
+   "a": "<div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$\\ln S_T-\\ln S_0\\sim\\phi\\left[\\left(\\mu-\\frac{\\sigma^2}{2}\\right)T,\\ \\sigma^2T\\right]$$</div><p>Expected value = \\(\\left(\\mu-\\frac{\\sigma^2}{2}\\right)T\\) = (0,15-0,3^2/2)*0,019231 = <b>0,002019</b></p><p>Variance = \\(\\sigma^2T\\) = 0,3^2*0,019231 = <b>0,001731</b></p>"
+  },
+  {
+   "id": "ex2024jan29-2-3",
+   "topics": [
+    "II21"
+   ],
+   "src": "29 Jan 2024 · Q2.3",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 29 Jan 2024 · Q 2.3</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">2. Assuming that you have a financial asset whose price follows a stochastic process corresponding to a Geometric Brownian Motion, with a drift equal to 0,15 and a volatility of 30% (both per annum):</span>Present the stochastic process of the forward rate on this asset price. (3,0)",
+   "a": "<div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$dG=\\left(\\frac{\\partial G}{\\partial x}a+\\frac{\\partial G}{\\partial t}+\\frac12\\frac{\\partial^2G}{\\partial x^2}b^2\\right)$$</div><div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$dt+\\frac{\\partial G}{\\partial x}b\\,dz$$</div><div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$\\Rightarrow\\ dF=\\left[e^{r(T-t)}\\mu S-rSe^{r(T-t)}\\right]dt+e^{r(T-t)}\\sigma S\\,dz$$</div><div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$\\Leftrightarrow\\ dF=(\\mu-r)F\\,dt+\\sigma F\\,dz$$</div>"
+  },
+  {
+   "id": "ex2024jan29-3-1",
+   "topics": [
+    "II21"
+   ],
+   "src": "29 Jan 2024 · Q3.1",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 29 Jan 2024 · Q 3.1</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">3. How can one argue that:</span>in a Wiener process, the uncertainty and the irregularity of its path is proportional to time? (2,5)",
+   "a": "<p>When Δt → 0, the path becomes <b>much more irregular</b>, as the size of the movement in the variable in time Δt is proportional to the \\(\\sqrt{\\Delta t}\\). When Δt is small, \\(\\sqrt{\\Delta t}\\) is much larger than Δt => the changes in z will be much larger than Δt, as \\(\\Delta z=\\epsilon\\sqrt{\\Delta t}\\).</p>"
+  },
+  {
+   "id": "ex2024jan29-3-2",
+   "topics": [
+    "II23"
+   ],
+   "src": "29 Jan 2024 · Q3.2",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 29 Jan 2024 · Q 3.2</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">3. How can one argue that:</span>an asset is riskier when its pay-off is negatively correlated to the stochastic discount factor (2,5)",
+   "a": "<div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$\\Lambda_t=E_t\\left[i_{t+1}\\right]-i^f_{t+1}=-\\rho_{M_{t+1},i_{t+1}}\\frac{\\sigma_{M_{t+1}}\\sigma_{i_{t+1}}}{E_t\\left[M_{t+1}\\right]}$$</div><p>⇔ the excess return of any asset over the risk-free asset depends on the <b>correlation of its rate of return with the sdf</b> => an asset with pay-off negatively correlated to the sdf is riskier.</p><p><i>(The formula is a tiny image in the correction; it is the same expression as in the 2017 and 2019 corrections.)</i></p>"
+  },
+  {
+   "id": "ex2024jan29-4-1",
+   "topics": [
+    "II1"
+   ],
+   "src": "29 Jan 2024 · Q4.1",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 29 Jan 2024 · Q 4.1</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">4. Considering that the term structure of interest rates is characterized by the discount function:</span>Present the discount function to be estimated by a cubic polynomial spline, assuming that the range of maturities is divided in the following intervals: 0-1 years, 1-5 years; 5-10 years and &gt;10 years. (3,0/20)",
+   "a": "<div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$d(t)=1+a_{2,1}t+a_{3,1}t^2+a_{4,1}t^3+\\sum_{h=1}^{k-3}a_{4,h+1}(t-t_h)^3\\cdot D_h(t)$$</div><ul><li>No. of intervals (k-2) =4</li><li>No. of vertices (k-3) =3</li><li>No. of parameters =6</li></ul><div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$d(t)=1+a_{2,1}t+a_{3,1}t^2+a_{4,1}t^3+a_{4,2}(t-1)^3\\cdot D_1(t)$$</div><div style=\"overflow-x:auto;overflow-y:hidden;font-size:.82em\">$$+a_{4,3}(t-5)^3\\cdot D_2(t)+a_{4,4}(t-10)^3\\cdot D_3(t)$$</div>"
+  },
+  {
+   "id": "ex2024jan29-4-2",
+   "topics": [
+    "II1"
+   ],
+   "src": "29 Jan 2024 · Q4.2",
+   "type": "open",
+   "qHtml": true,
+   "q": "<span style=\"display:block;font-size:.72em;font-weight:600;opacity:.65;margin-bottom:.4em\">Exam 29 Jan 2024 · Q 4.2</span><span style=\"display:block;font-size:.8em;font-weight:400;margin-bottom:.6em\">4. Considering that the term structure of interest rates is characterized by the discount function: 4.1: cubic polynomial spline with vertices at 1, 5 and 10 years.</span>Identify the main advantages and shortcomings of this methodology. (2,0/20)",
+   "a": "<ul><li><b>Advantages</b> – good in-sample fitting (even better than the simple cubic polynomials, as it allows for better adjustments in each maturity bucket</li><li><b>Shortcomings</b> – overfitting => out-of-sample explosive behavior, providing meaningless estimates for the discount factor and consequently for the spot and forward rates.</li></ul>"
+  }
+ ]
+};
